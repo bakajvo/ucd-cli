@@ -1,0 +1,23 @@
+{
+  "name": "ucd-cli",
+  "version": "1.0.0",
+  "description": "IBM UrbanCode Deploy client for NodeJS projects",
+  "main": "./bin/index.js",
+  "type": "module",
+  "bin": {
+    "ucd-cli": "./bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vojtěch Bakaj",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "cli-meow-help": "^2.0.2",
+    "cli-welcome": "^2.2.2",
+    "lodash": "^4.17.21",
+    "log-symbols": "^5.1.0",
+    "meow": "^10.1.2"
+  }
+}
