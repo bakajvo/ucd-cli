@@ -13,7 +13,6 @@ const createVersion = ({debug, component, componentVersion}) => {
     }
     Log.info(`Starting createVersion action on component ${chalk.bold(component)} in version ${chalk.bold(componentVersion)}.`);
 
-
     process.exit(0);
 };
 

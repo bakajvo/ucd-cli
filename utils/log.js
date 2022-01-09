@@ -11,7 +11,7 @@ class Log {
     }
 
     static debug = (msg) => {
-        Log.info(msg, 'DEBUG');
+        console.log(`${sym.info} ${chalk.cyan.inverse(` DEBUG `)} ${chalk.cyan(msg)}`);
     }
 }
 

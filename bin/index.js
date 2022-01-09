@@ -4,6 +4,7 @@ import welcome from 'cli-welcome';
 import isEmpty from "lodash/isEmpty.js";
 import Log from "../utils/log.js";
 import createVersion from "../commands/createVersion.js";
+import config from "../utils/config.js";
 
 const { input, flags } = cli;
 
@@ -18,7 +19,8 @@ const { input, flags } = cli;
         clear: false,
     });
     flags.debug && Log.debug(`Flags: ${JSON.stringify(flags, null, 2)}`);
-    
+    flags.debug && Log.debug(`Configuration: ${JSON.stringify(config, null, 2)}`);
+
     input.includes(`help`) && cli.showHelp(0);
     input.includes(`createVersion`) && createVersion(flags);
     isEmpty(input) && cli.showHelp(0);
